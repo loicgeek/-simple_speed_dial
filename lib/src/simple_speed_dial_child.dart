@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 
 class SpeedDialChild {
   const SpeedDialChild({
+    this.key,
     this.child,
     this.foregroundColor,
     this.backgroundColor,
@@ -9,7 +10,7 @@ class SpeedDialChild {
     this.onPressed,
     this.closeSpeedDialOnPressed = true,
   });
-
+  final Key? key;
   final Widget? child;
 
   final Color? foregroundColor;
